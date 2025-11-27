@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    color: #1d1d1f;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+.main-header {
+    /* margin-top: 22px; */
+    margin: 24px auto;
+    background: rgba(216, 222, 243, 0.65);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+    padding: 4px 0px;
+    width: 130vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-radius: 22px;
+    border: 3px solid white;
+}
+
+.main-header .tombol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-group {
+    display: flex;
+    margin-left: 25px;
+}
+
+.logo-group img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.Judul {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    font-family: "arial";
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    /* list-style itu buat ngapus desain list nya */
+    margin-right: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 4px 6px;
+    transition: color 0.3s ease-in-out, 0.2s ease-in-out;
+}
+
+.main-nav a:hover {
+    color: yellow;
+    text-shadow: white 0px 5px 10px;
+    transform: scaleY(1.1);
+}
+
+.select{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.select option{
+    font-weight: bold;
+}
+
+/* main section */
+
+.section {
+    background-color: black;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tema {
+    font-size: 70px;
+    font-family: "arial";
+    border-bottom: white solid 3px;
+}
+
+.Beranda {
+    color: white;
+}
+
+.Beranda h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.teks-judul {
+    display: flex;
+    font-size: 50px;
+    border-bottom: white solid 4px;
+}
+
+.teks-judul h3 {
+    font-size: 70px;
+    font-family: "charmonman";
+}
+
+.logo2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.logo2 a:hover {
+    color: yellow;
+    transform: translateY(-5px);
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.start button {
+    background-color: white;
+    padding: 15px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.start button:hover {
+    background-color: yellow;
+    transform: translateY(-10px);
+    box-shadow: white 0px 5px 10px;
+}
+
+.start a {
+    text-decoration: none;
+    color: black;
+}
+
+.section2 {
+    background-color: black;
+    height: 100vh;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me img {
+    height: 50vh;
+    width: 350px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.about-me img:hover {
+    transform: translateY(-15px);
+    box-shadow: white 0 20px 30px;
+}
+
+.img {
+    height: 70vh;
+    background-color: white;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    box-shadow: #808080 0 20px 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.img:hover {
+    background: linear-gradient(135deg, blue, orange);
+}
+
+.section-teks {
+    height: 20vh;
+    width: 45%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+}
+
+.teks-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 {
+    background-color: black;
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.judul1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+.judul1:after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(90deg, #6366f1, #a855f7);
+    margin: 0 auto 0;
+    border-radius: 4px;
+}
+
+.judul2 {
+    color: white;
+}
+
+.judul2::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 4px;
+    background: linear-gradient(90deg, #6366f1, #a855f7);
+    margin: 0 auto 0;
+    border-radius: 4px;
+}
+
+.ppp {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.grid {
+    display: flex;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card1 {
+    background-color: #f5f5f7;
+    padding: 30px;
+    width: 50vh;
+    height: 30vh;
+    border-radius: 20px;
+    flex: 1;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card1:hover {
+    /* transform: translateY itu untuk ngasih animasi ke atas tergantung ukuran nya */
+    transform: translateY(-20px);
+    box-shadow: 0 20px 30px gray;
+    background: linear-gradient(150deg, rgb(153, 240, 255), white);
+    text-shadow: 0 0 24px;
+}
+
+.icon {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.card1 h3 {
+    font-size: 24px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.card1 h3:hover {
+    color: red;
+}
+
+.card1 p {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section4 {
+    background-color: black;
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.pppp {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.section5 {
+    background-color: black;
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.ppppp {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    height: 70vh;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: rgb(242, 255, 61) 0px 20px 30px;
+}
+
+.card img {
+    height: 40vh;
+    width: 50vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.card h1 {
+    font-size: 13px;
+    color: rgb(133, 133, 133);
+    text-align: left;
+    margin-left: 20px;
+}
+
+.section6 {
+    background-color: black;
+    height: 100vh;
+    padding: 60px;
+}
+
+.kata {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.alamat-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.alamat-info {
+    background: linear-gradient(135deg, #e6e9ff, #f5f6ff);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: left;
+}
+
+.alamat-info h2 {
+    border-left: 6px solid #4f46e5;
+    padding-left: 12px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.alamat-info p {
+    margin: 10px 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.flex1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.flex2 img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+.flex2 a {
+    text-decoration: none;
+}
+
+.map {
+    flex: 1 1 400px;
+    max-width: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.main-footer {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #6e6e73;
+    background-color: #f5f5f7;
+}
+/* 
+#toggleBtn {
+    padding: 5px 15px;
+    border: none;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+#toggleBtn:hover {
+    background: yellow;
+} */
