@@ -22,7 +22,7 @@ body {
     backdrop-filter: blur(8.3px);
     -webkit-backdrop-filter: blur(8.3px);
     padding: 4px 0px;
-    width: 130vh;
+    max-width: 135vh;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -430,7 +430,7 @@ body {
 
 .section6 {
     background-color: black;
-    height: 100vh;
+    height: 105vh;
     padding: 60px;
 }
 
