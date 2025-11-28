@@ -83,6 +83,7 @@ body {
     background-color: black;
     color: white;
     border-radius: 5px;
+    border: white 2px solid;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -90,6 +91,7 @@ body {
 
 .select option{
     font-weight: bold;
+    border: white 1.5px solid;
 }
 
 /* main section */
