@@ -67,29 +67,3 @@ for (let i = 0; i < projectsLagi.length; i++) {
 
   gallery.appendChild(card);
 }
-
-
-const select = document.getElementById("nasyidPilih");
-const player = document.getElementById("audio");
-
-select.addEventListener("change", () => {
-  if (select.value !== "") {
-    player.src = select.value;
-    player.play();
-  }
-});
-  // audio
-  // const audio = document.getElementById("nasyid");
-  //         const button = document.getElementById("toggleBtn");
-  
-  //         button.addEventListener("click", function () {
-  //             if (audio.paused) {
-  //                 audio.play();
-  //                 button.textContent = "Stop Nasyid";
-  //                 button.style.backgroundColor = "yellow";
-  //             } else {
-  //                 audio.pause();
-  //                 button.textContent = "Play Nasyid";
-  //                 button.style.backgroundColor = "white"
-  //             }
-  //         });
